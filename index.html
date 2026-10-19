@@ -68,9 +68,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="button button-dark" href="#beneficios">
               Descubre Savia <span aria-hidden="true">↗</span>
             </a>
-            <button class="button button-dark" href="#contacto" id="btn-cta-principal">
+            <button class="button button-dark" href="#contacto" id="btn-cta-principal" onclick="notificarEventoGA4()">
               Inscribirme ahora <span aria-hidden="true">↗</span>
             </button>
+             <script>
+  function notificarEventoGA4() {
+    alert('evento de GA4 disparado');
+  }
+</script>
             <a class="text-link" href="#origen">De dónde viene <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-note">
