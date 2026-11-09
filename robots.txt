@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paco-el-taco.github.io/landingpage/sitemap.xml
