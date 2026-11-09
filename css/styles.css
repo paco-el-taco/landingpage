@@ -51,6 +51,10 @@ img {
   width: 100%;
 }
 
+.hs-form-frame {
+  min-height: 24rem;
+}
+
 ::selection {
   background: var(--forest);
   color: var(--paper);

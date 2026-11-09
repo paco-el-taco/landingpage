@@ -35,6 +35,37 @@ document.addEventListener("keydown", (event) => {
 
 year.textContent = String(new Date().getFullYear());
 
+const hubspotForm = document.querySelector(".hs-form-frame");
+
+if (hubspotForm) {
+  const loadHubspotForm = () => {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/embed/52187401.js";
+    script.async = true;
+    script.onerror = () => {
+      document.querySelector("#hubspot-form-fallback").hidden = false;
+      console.error("No se pudo cargar el formulario de HubSpot.");
+    };
+    document.head.append(script);
+  };
+
+  if ("IntersectionObserver" in window) {
+    const formObserver = new IntersectionObserver(
+      (entries, observer) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          observer.disconnect();
+          loadHubspotForm();
+        }
+      },
+      { rootMargin: "300px 0px" }
+    );
+
+    formObserver.observe(hubspotForm);
+  } else {
+    loadHubspotForm();
+  }
+}
+
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
