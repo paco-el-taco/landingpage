@@ -16,7 +16,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       content="Savia: una propuesta de grasa de cerdo pura para cocinar con sabor, calma y pocos ingredientes."
     >
     <title>Savia - El sabor de volver a lo esencial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap"
+    >
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
   </head>
@@ -68,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="button button-dark" href="#beneficios">
               Descubre Savia <span aria-hidden="true">↗</span>
             </a>
-            <button class="button button-dark" href="#contacto" id="btn-cta-principal" onclick="notificarEventoGA4()">
+            <button class="button button-dark" type="button" id="btn-cta-principal" onclick="notificarEventoGA4()">
               Inscribirme ahora <span aria-hidden="true">↗</span>
             </button>
              <script>
@@ -86,8 +92,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="hero-visual">
           <img
             class="hero-image"
-            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=1100&amp;h=733&amp;q=75"
+            srcset="
+              https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=640&amp;h=427&amp;q=75 640w,
+              https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=900&amp;h=600&amp;q=75 900w,
+              https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=1100&amp;h=733&amp;q=75 1100w
+            "
+            sizes="(max-width: 48rem) 90vw, 45vw"
+            width="1100"
+            height="733"
             alt="Mesa cálida servida con platos preparados para compartir"
+            decoding="async"
             fetchpriority="high"
           >
           <div class="hero-image-wash" aria-hidden="true"></div>
@@ -152,9 +167,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <section class="origin section-shell section-pad reveal" id="origen" aria-labelledby="origin-title">
         <div class="origin-visual">
           <img
-            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=1000&amp;h=667&amp;q=75"
+            srcset="
+              https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=640&amp;h=427&amp;q=75 640w,
+              https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=75 800w,
+              https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=1000&amp;h=667&amp;q=75 1000w
+            "
+            sizes="(max-width: 48rem) 90vw, 40vw"
+            width="1000"
+            height="667"
             alt="Preparación de ingredientes frescos en una cocina de casa"
             loading="lazy"
+            decoding="async"
           >
           <div class="origin-image-label"><span>La cocina, sin atajos</span><span>02 /</span></div>
           <span class="origin-image-dot" aria-hidden="true">s.</span>
@@ -229,9 +253,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="second-cta-image">
           <img
-            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=900&amp;h=600&amp;q=75"
+            srcset="
+              https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=640&amp;h=427&amp;q=75 640w,
+              https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=75 800w,
+              https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=900&amp;h=600&amp;q=75 900w
+            "
+            sizes="(max-width: 48rem) 88vw, 33vw"
+            width="900"
+            height="600"
             alt="Plato colorido de ingredientes frescos listo para compartir"
             loading="lazy"
+            decoding="async"
           >
           <span class="image-roundel">savia<br><span>en tu<br>cocina</span></span>
         </div>
